@@ -1,0 +1,110 @@
+# web-intro-lab4.
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Học HTML - Phân biệt Website và Webpage</title>
+  <style>
+    /* CSS nội bộ giúp giao diện dễ nhìn hơn khi chạy thử */
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f9;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 1rem;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background: #333;
+      color: #fff;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Fpoly Web Design</h1>
+    <nav>
+      <ul>
+        <li><a href="#trang-chu">Trang chủ</a></li>
+        <li><a href="#gioi-thieu">Giới thiệu</a></li>
+        <li><a href="#lien-he">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="trang-chu">
+      <h2>Bài thực hành: Phân biệt Website và Trang web (Webpage)</h2>
+      <p>Trong ngành phát triển web, việc hiểu rõ hai khái niệm này là cực kỳ quan trọng:</p>
+      
+      <ul>
+        <li><strong>Webpage (Trang web):</strong> Là một tài liệu đơn lẻ hiển thị trên trình duyệt (ví dụ: chính trang <code>index.html</code> này).</li>
+        <li><strong>Website:</strong> Là một tập hợp gồm nhiều webpage liên kết lại với nhau dưới cùng một tên miền (domain). Thẻ <code>&lt;nav&gt;</code> ở trên chính là công cụ giúp người dùng di chuyển giữa các webpage trong một website.</li>
+      </ul>
+    </section>
+
+    <hr>
+
+    <section id="gioi-thieu">
+      <h2>Giới thiệu về bài tập</h2>
+      <p>Đây là bài tập giả định cấu trúc đa trang (Multi-page) bằng cách sử dụng các liên kết nội bộ (Anchor links). Khi bạn click vào Menu, trình duyệt sẽ tự động cuộn đến phần tương ứng.</p>
+    </section>
+
+    <hr>
+
+    <section id="lien-he">
+      <h2>Thông tin liên hệ</h2>
+      <p>Nếu có thắc mắc về bài học, bạn có thể điền thông tin vào form bên dưới:</p>
+      <form action="#" method="POST">
+        <label for="name">Họ và tên:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <button type="submit">Gửi liên hệ</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Thực hành HTML5 - Thầy/Cô Editor 4</p>
+  </footer>
+
+  <script>
+    // Bạn có thể thêm JS xử lý form hoặc hiệu ứng cuộn mượt ở đây nếu đề yêu cầu
+    console.log("Trang web đã tải xong cấu trúc điều hướng giả định.");
+  </script>
+
+</body>
+</html>
